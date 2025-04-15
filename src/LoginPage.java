@@ -78,6 +78,10 @@ public class LoginPage implements ActionListener {
                     userPasswordField.setText("");
 
                 }
+
+            } else {
+                messageLabel.setForeground(Color.red);
+                messageLabel.setText("Username not found");
             }
         }
     }
