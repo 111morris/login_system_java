@@ -7,7 +7,7 @@ public class IDandPassword {
     IDandPassword(){
         loginInfo.put("morris", "password123");
         loginInfo.put("teacher", "teacher123");
-        loginInfo.put("sudent", "student123");
+        loginInfo.put("student", "student123");
 
     }
     protected HashMap getLoginInfo(){
