@@ -25,7 +25,7 @@ public class LoginPage implements ActionListener {
         userIdLabel.setBounds(50,100,70,25);
         userPasswordLabel.setBounds(50, 150, 75, 25);
 
-        messageLabel.setBounds(120,200,200, 35);
+        messageLabel.setBounds(120,240,200, 35);
         messageLabel.setFont(new Font(null, Font.ITALIC,20));
 
         userIdField.setBounds(120,100,200,25);
@@ -70,6 +70,13 @@ public class LoginPage implements ActionListener {
                     messageLabel.setText("Login Successful");
 
                     WelcomePage welcomePage = new WelcomePage();
+                } else {
+                    messageLabel.setForeground(Color.red);
+                    messageLabel.setText("Wrong password");
+
+                    userIdField.setText("");
+                    userPasswordField.setText("");
+
                 }
             }
         }
