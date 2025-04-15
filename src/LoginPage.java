@@ -28,12 +28,17 @@ public class LoginPage implements ActionListener {
         messageLabel.setBounds(120,200,200, 35);
         messageLabel.setFont(new Font(null, Font.ITALIC,20));
 
+        userIdField.setBounds(120,100,200,25);
+        userPasswordField.setBounds(120, 150, 200,25);
+
 
 
 
         frame.add(userIdLabel);
         frame.add(userPasswordLabel);
         frame.add(messageLabel);
+        frame.add(userIdField);
+        frame.add(userPasswordField);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420,400);
         frame.setLayout(null);
