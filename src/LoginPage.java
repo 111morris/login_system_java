@@ -24,6 +24,7 @@ public class LoginPage implements ActionListener {
         userIdLabel.setBounds(50,100,70,25);
         userPasswordLabel.setBounds(50, 150, 70, 25);
 
+        messageLabel.setBounds(120,200,200, 35);
 
 
         frame.add(userIdLabel);
